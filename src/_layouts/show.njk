@@ -1,0 +1,23 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+    <div class="grid lg:grid-col lg:grid-cols-2 grid-flow-row lg:w-full gap-4 lg:justify-items-center">
+
+        <div>
+            {{content | safe}}
+            <p>
+       Le <time datetime="{{date}}">{{date.toLocaleDateString("fr")}}</time> à <time datetime="{{time}}">{{time}}</time>
+            </p>
+            <p>Lieu : {{ place }}</p>
+            <p>Prix: 
+        {% if price > 0 %}
+                    {{price}}€
+        {% else %}
+            Gratuit
+        {% endif %}
+            </p>
+        </div>
+
+        <img src="{{poster}}" alt="Affiche du spectacle '{{title}}'" class="max-w-md">
+    </div>
+{% endblock %}

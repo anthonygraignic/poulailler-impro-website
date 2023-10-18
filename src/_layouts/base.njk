@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>{{site.title}}
+      {% if title %} - {{title}}
+      {% endif %}
+    </title>
+    <meta name="description" content="
+      {% if description %}
+        {{description}}
+      {% else %}
+        {{site.description}}
+      {% endif %}
+    "/>
+
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
+      {% include "partials/_header.njk" %}
+      <main class="flex flex-col p-4 max-w-5xl w-full mx-auto my-0">
+        {% block main %}
+          {{content | safe}}
+        {% endblock %}
+      </main>
+      {% include "partials/_footer.njk" %}
+    </body>
+  </html>

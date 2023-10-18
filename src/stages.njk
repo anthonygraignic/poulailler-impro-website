@@ -1,0 +1,26 @@
+---
+layout: base
+title: Stages
+description: Prochains stages et rentrée de la troupe de théatre d'improvisation le Poulailler de l'Impro
+eleventyNavigation:
+  key: Stages et rentrée
+  order: 2
+
+eleventyImport:
+  collections: ["stage"]
+---
+<section>
+  <h1>Stages</h1>
+  <p>Les stages sont l'occasion de BLABLABLA</p>
+
+  <h2>Prochains stages</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {% for stage in collections.stage | upcoming(collections.stage) %}
+      <a href="{{ stage.url }}" class="underline">{{ stage.data.title }} le {{ stage.data.date.toLocaleDateString("fr") }}</a>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h1>Rentrée</h1>
+</section>
