@@ -1,8 +1,8 @@
 {
   "name": "poulailler-impro-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Static site for Poulailler de l'impro french improv troupe",
+  "main": "index.html",
   "scripts": {
     "start": "npm-run-all -p dev:*",
     "build": "run-s build:*",
@@ -11,9 +11,16 @@
     "build:11ty": "eleventy",
     "build:css": "tailwindcss -i src/css/tailwind.css -o public/css/styles.css --postcss"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anthonygraignic/poulailler-impro-website.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Anthony Graignic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthonygraignic/poulailler-impro-website/issues"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
