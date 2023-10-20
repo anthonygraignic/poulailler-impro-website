@@ -1,17 +1,19 @@
 ---
-title: Oops! Not Found
+layout: base
+title: 404 Page Non Trouvée
 permalink: 404.html
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <h1>{{ title }}</h1>
-    <p>This is where you should tell the user how to find their content. Maybe on the <a href="/">home page?</a>
-    </p>
-  </body>
-</html>
+<div class="flex flex-col items-center justify-items-center space-y-2 mb-8">
+
+  <h1>Oups ! Page Non Trouvée</h1>
+
+  <p>Par contre, vous pouvez nous trouver à coup sûr lors de notre  <a href="/spectacles" class="underline">prochain spectacle</a> ! 
+      </p>
+
+  <a href="/spectacles">
+    <video class="mx-auto w-2/3 md:max-w-sm md:w-fit" autoplay muted loop>
+      <source src="/poulailler-404.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les balises vidéo.
+      </video>
+  </a>
+</div>
