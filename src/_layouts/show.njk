@@ -2,20 +2,30 @@
 
 {% block main %}
     <div class="grid lg:grid-col lg:grid-cols-2 grid-flow-row lg:w-full gap-4 lg:justify-items-center">
+        <div class="flex flex-col justify-around">
+            <div>
+                {{content | safe}}
+            </div>
+            <div class="flex flex-col">
+                <h2>Date et heure</h2>
+                <p>
+                    Le <time datetime="{{date}}" class="">{{date.toLocaleDateString("fr",{weekday: "long",year: "numeric",month: "long",day: "numeric"})}}</time> à <time datetime="{{time}}">{{time}}</time>
+                </p>
+                <h2>Lieu</h2>
+                <p>{{ place }}</p>
+                <h2>Prix</h2>
+                <p>
+                    {% if price > 0 %}
+                        {{price}}€
+                    {% else %}
+                        Gratuit
+                    {% endif %}
+                </p>
 
-        <div>
-            {{content | safe}}
-            <p>
-       Le <time datetime="{{date}}">{{date.toLocaleDateString("fr")}}</time> à <time datetime="{{time}}">{{time}}</time>
-            </p>
-            <p>Lieu : {{ place }}</p>
-            <p>Prix: 
-        {% if price > 0 %}
-                    {{price}}€
-        {% else %}
-            Gratuit
-        {% endif %}
-            </p>
+                {% if buy_link %}
+                    <a href="{{buy_link}}" target="_blank"rel="external nofollow noreferrer" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 hover:text-white focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 font-medium rounded-lg text-sm mt-4 px-4 py-3 text-center mr-3 md:mr-0">Réserver</a>
+                {% endif %}
+            </div>
         </div>
 
         <img src="{{poster}}" alt="Affiche du spectacle '{{title}}'" class="max-w-md">

@@ -20,13 +20,12 @@
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
   </head>
   <body>
-    <div class="flex flex-col min-h-screen bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
-      {% include "partials/_header.njk" %}
-      <main class="flex flex-col p-4 max-w-5xl w-full mx-auto my-0">
-        {% block main %}
-          {{content | safe}}
-        {% endblock %}
-      </main>
-      {% include "partials/_footer.njk" %}
-    </body>
-  </html>
+    {% include "partials/_header.njk" %}
+    <main class="flex flex-col px-4 py-2 max-w-5xl w-full mx-auto my-0">
+      {% block main %}
+        {{content | safe}}
+      {% endblock %}
+    </main>
+    {% include "partials/_footer.njk" %}
+  </body>
+</html>

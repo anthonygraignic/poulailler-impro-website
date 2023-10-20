@@ -21,15 +21,15 @@
 }
 
 body {
-  min-height: 100vh;
+  @apply min-h-screen bg-white dark:bg-gray-800 text-gray-900 dark:text-white;
 }
 
 h1 {
-  @apply text-3xl font-bold tracking-tighter mt-4 mb-2 text-center lg:text-4xl text-yellow-500 uppercase;
+  @apply text-3xl font-bold tracking-tighter mt-2 mb-2 text-center lg:text-4xl text-yellow-500 uppercase;
 }
 
 h2 {
-  @apply text-xl tracking-tighter mb-3 text-center lg:text-2xl;
+  @apply text-xl tracking-tighter mt-2 mb-2 lg:text-2xl;
 }
 
 h3 {

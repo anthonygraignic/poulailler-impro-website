@@ -16,7 +16,7 @@ eleventyImport:
   <h2>Prochains stages</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     {% for stage in collections.stage | upcoming(collections.stage) %}
-      <a href="{{ stage.url }}" class="underline">{{ stage.data.title }} le {{ stage.data.date.toLocaleDateString("fr") }}</a>
+      {% include "components/stage.njk" %}
     {% endfor %}
   </div>
 </section>
