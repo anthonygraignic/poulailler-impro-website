@@ -7,9 +7,9 @@ tags:
 date: 2023-10-26
 time: 20h30
 place: Ballainvilliers • Clermont-Ferrand
-description: Un spectacle d'improvisation BLABLABLA
+description: Un cabaret basé sur vos anecdotes, mantras, rêves, pires cauchemars ou vos histoires pour la première fois au Café Ballainvilliers
 price: 0
-poster: ../../assets/img/affiche-2023-10-26-cabaret-ballainvilliers.png
+poster: ../../assets/img/affiche-20231026-cabaret-ballainvilliers.png
 buy_link: https://my.weezevent.com/cabaret-ballainvilliers
 ---
 

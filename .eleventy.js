@@ -18,12 +18,18 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addFilter("past", function (collection) {
-    return collection.filter((item) => Date.parse(item.data.date) < new Date());
+    return collection
+      .filter((item) => Date.parse(item.data.date) < new Date())
+      .sort(function (a, b) {
+        return b.date - a.date; // sort by date - descending
+      });
   });
   eleventyConfig.addFilter("upcoming", function (collection) {
-    return collection.filter(
-      (item) => Date.parse(item.data.date) >= new Date()
-    );
+    return collection
+      .filter((item) => Date.parse(item.data.date) >= new Date())
+      .sort(function (a, b) {
+        return a.date - b.date; // sort by date - ascending
+      });
   });
 
   return {
