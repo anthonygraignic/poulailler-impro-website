@@ -9,7 +9,7 @@ time: 20h30
 place: La Petite Gaillarde
 description: Poulailler de l’Impro VS Love Boat-Impro Suisse
 price: 5
-poster: ../../assets/img/affiche-20230610-match.jpg
+image: ../../assets/img/affiche-20230610-match.jpg
 buy_link: https://my.weezevent.com/match-dimpro-poulailler-love-boat
 ---
 
