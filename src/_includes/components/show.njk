@@ -1,5 +1,7 @@
 <a href="{{spectacle.url}}" class="block max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-    <img class="rounded-t-lg" src={{spectacle.data.image}} alt="Affiche du spectacle"/>
+    {% if spectacle.data.image %}
+        <img class="rounded-t-lg" src={{spectacle.data.image}} alt="Affiche du spectacle '{{spectacle.data.title}}'"/>
+    {% endif %}
     <div class="p-6">
         <p class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
             {{spectacle.data.title}}

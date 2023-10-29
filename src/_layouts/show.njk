@@ -28,6 +28,8 @@
             </div>
         </div>
 
-        <img src="{{image}}" alt="Affiche du spectacle '{{title}}'" class="lg:max-w-md">
+        {% if image %}
+            <img src="{{image}}" alt="Affiche du spectacle '{{title}}'" class="lg:max-w-md">
+        {% endif %}
     </div>
 {% endblock %}
