@@ -15,13 +15,13 @@ npm run start
 npm run build
 ```
 
-## A faire
+## Fonctionnalités
 
-- [ ] Custom404 page
-- [ ] sitemap
-- [ ] SEO
-- [ ] Check lighthouse results
-- [ ] Permalink
-- [ ] RSS
-- [ ] Image optimization
-- [ ] Eco conception https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/
+- Spectacles et stages triés par dates (passés ou présents) avec un modèle type
+- Formulaire de contact via Netlify
+- Menu de navigation sur Mobile
+- Thème Sombre
+- Flux RSS
+- Sitemap
+- Page 404 personnalisée
+- Prévue sociale des pages et spectacles (meta `og:` et `twitter:`)
