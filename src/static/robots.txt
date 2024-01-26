@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /mentions-legales
 Sitemap: https://poulailler-impro.fr/sitemap.xml
