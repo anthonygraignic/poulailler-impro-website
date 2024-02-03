@@ -17,6 +17,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  eleventyConfig.addNunjucksGlobal(
+    "upcomingEvent",
+    (eventDate) => Date.parse(eventDate) > new Date().getTime()
+  );
   eleventyConfig.addFilter("past", function (collection) {
     return collection
       .filter((item) => Date.parse(item.data.date) < new Date())
