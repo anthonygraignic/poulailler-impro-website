@@ -3,5 +3,10 @@
     <h3 class="mb-1 text-3xl font-medium text-gray-900 dark:text-white">{{teacher.name}}</h2>
     <span class="text-sm text-gray-500 dark:text-gray-400">{{teacher.description}}</span>
 
-    <a href={{teacher.website}} rel="external">Site web</a>
+    {% if teacher.website %}
+        <a href={{teacher.website}} rel="external">Site web</a>
+    {% endif %}
+    {% if teacher.instagram %}
+        <a href={{teacher.instagram}} rel="external">Instagram</a>
+    {% endif %}
 </div>

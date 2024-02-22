@@ -3,6 +3,13 @@
         "name": "La Fée Malou",
         "description": "Marie-Laure est comédienne, improvisatrice, marionnettiste, conteuse, maquilleuse et ballooneuse depuis 18 ans en Auvergne. Elle s'adresse aux enfants dès le plus jeune âge, mais aussi aux adultes. Elle improvise dans plusieurs troupes de Clermont-Ferrand.",
         "image": "https://randomuser.me/api/portraits/lego/1.jpg",
-        "website": "https://lafeemalou.wixsite.com/lafeemalou"
+        "website": "https://lafeemalou.wixsite.com/lafeemalou",
+        "instagram": "https://www.instagram.com/lafeemalou/"
+    },
+    {
+        "name": "Vincent Chevarin",
+        "description": "/",
+        "image": "https://randomuser.me/api/portraits/lego/2.jpg",
+        "instagram": "https://www.instagram.com/vincentchevarin/"
     }
 ]
