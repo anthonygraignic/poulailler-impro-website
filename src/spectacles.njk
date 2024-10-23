@@ -14,7 +14,7 @@ eleventyImport:
 
 <section>
     <h2>À venir</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         {% for spectacle in collections.spectacle | upcoming(collections.spectacle) %}
             {% include "components/show.njk" %}
         {% endfor %}

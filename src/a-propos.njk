@@ -30,7 +30,7 @@ eleventyNavigation:
 	</p>
 	<div class="flex py-4 space-x-6 sm:justify-center sm:mt-0">
 		<a
-			href="https://www.facebook.com/poulaillerimpro/"
+			href={{site.facebookUrl}}
 			target="_blank"
 			rel="external nofollow noreferrer"
 			class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -45,7 +45,7 @@ eleventyNavigation:
 			<span class="sr-only">Page Facebook</span>
 		</a>
 		<a
-			href="https://www.instagram.com/poulaillerimpro/"
+			href={{site.instagramUrl}}
 			target="_blank"
 			rel="external nofollow noreferrer"
 			class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -61,7 +61,7 @@ eleventyNavigation:
 		</a>
 	</div>
 	<p>
-		Et évidemment, si vous souhaitez voir nos spectacles, c’est bien sur ici :
+		Et évidemment, si vous souhaitez nous voir en spectacle, c’est par ici :
 		<a href="/spectacles" class="underline">Programmation des spectacles</a>
 	</p>
 	<p class="mt-2">
@@ -72,7 +72,7 @@ eleventyNavigation:
 	</p>
 </section>
 
-<section>
+<section class="mt-8">
 	<h1>ATELIERS</h1>
 
 	<p>
@@ -82,7 +82,6 @@ eleventyNavigation:
 		bien d’autres) utiles à la réalisation de nos spectacles.<br/><br/> Ambiance conviviale et bienveillance
 		sont au programme.
 	</p>
-	<p class="text-center text-red-600">AJOUTER PHOTOS</p>
 
 	<h1>STAGES</h1>
 	<p>
@@ -94,11 +93,11 @@ eleventyNavigation:
 	</p>
 	<ul class="list-disc list-inside ml-2 my-2">
 		<li>le conte et l’imaginaire avec la Fée Malou</li>
-
 		<li>
 			une formation aux rôles de DJs, MC (maître de cérémonie) et MJ (maître de jeux) avec
 			ImpromijoThé
 		</li>
+		<li>l'enthousiasme avec Johanna</li>
 	</ul>
 	<p>
 		L’inscription à ces stages est prioritaire pour les membres du Poulailler mais en fonction du
@@ -109,9 +108,8 @@ eleventyNavigation:
 	<p>
 		<a href="/stages" class="underline">Voir les prochains stages</a>
 	</p>
-	<p class="text-center text-red-600">AJOUTER PHOTOS</p>
 </section>
-<section>
+<section class="mt-8">
 	<h1>LA BASSE COUR</h1>
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2 md:mt-8">
 		{% for member in members %}

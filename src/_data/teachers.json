@@ -2,14 +2,47 @@
     {
         "name": "La Fée Malou",
         "description": "Marie-Laure est comédienne, improvisatrice, marionnettiste, conteuse, maquilleuse et ballooneuse depuis 18 ans en Auvergne. Elle s'adresse aux enfants dès le plus jeune âge, mais aussi aux adultes. Elle improvise dans plusieurs troupes de Clermont-Ferrand.",
-        "image": "https://randomuser.me/api/portraits/lego/1.jpg",
+        "image": "https://randomuser.me/api/portraits/lego/6.jpg",
         "website": "https://lafeemalou.wixsite.com/lafeemalou",
         "instagram": "https://www.instagram.com/lafeemalou/"
     },
     {
         "name": "Vincent Chevarin",
         "description": "/",
-        "image": "https://randomuser.me/api/portraits/lego/2.jpg",
+        "image": "https://randomuser.me/api/portraits/lego/0.jpg",
         "instagram": "https://www.instagram.com/vincentchevarin/"
+    },
+    {
+        "name": "Margaux Fonpult",
+        "description": "Comédienne-metteure en scène-formatrice",
+        "image": "https://randomuser.me/api/portraits/lego/4.jpg",
+        "instagram": "https://www.instagram.com/margaux.fonlupt/",
+        "website": "https://margauxfonlupt.wixsite.com/profil"
+    },
+    {
+        "name": "Vincent Tabary",
+        "description": "/",
+        "image": "https://randomuser.me/api/portraits/lego/8.jpg",
+        "instagram": "https://www.instagram.com/vincenttabary/",
+        "website": "https://vincent.tabary.me/"
+    },
+    {
+        "name": "Chrystelle - Impro MijoThé",
+        "description": "🌺 Formatrice d'improvisation théâtrale pour enfants, ados, adultes et Team Building. Êtes-vous prêts à embarquer ? 5 4 3 2 1 Impro 🎭",
+        "image": "https://randomuser.me/api/portraits/lego/6.jpg",
+        "website": "https://impromijothe.wordpress.com",
+        "instagram": "https://www.instagram.com/chrystelle_impro_mijothe/"
+    },
+    {
+        "name": "Emilie",
+        "description": "/",
+        "image": "https://randomuser.me/api/portraits/lego/7.jpg",
+        "website": "https://www.lenergiedemilie.com/"
+    },
+    {
+        "name": "Rémi",
+        "description": "/",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
+        "instagram": "https://www.instagram.com/remi.couzon/"
     }
 ]
