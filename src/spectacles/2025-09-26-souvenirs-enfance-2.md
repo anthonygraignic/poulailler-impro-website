@@ -10,7 +10,7 @@ place: La Petite Gaillarde • Clermont-Ferrand
 description:
 price: 9
 image: ../../assets/img/affiche-20250926-souvenir-enfance-2.jpeg
-buy_link:
+buy_link: https://www.helloasso.com/associations/le-poulailler-de-l-impro/evenements/spectacle-d-improvisation-souvernirs-d-enfance
 ---
 
 # Souvenirs d'enfance 2
