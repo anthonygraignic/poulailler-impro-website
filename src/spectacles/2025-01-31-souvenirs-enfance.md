@@ -9,7 +9,7 @@ time: 20h30
 place: La Petite Gaillarde • Clermont-Ferrand
 description:
 price: 9
-image: ../../assets/img/affiche20250131-souvenirs-enfance.jpg
+image: ../../assets/img/affiche-20250131-souvenirs-enfance.jpg
 buy_link: https://www.helloasso.com/associations/le-poulailler-de-l-impro/evenements/souvenirs-d-enfance
 ---
 
