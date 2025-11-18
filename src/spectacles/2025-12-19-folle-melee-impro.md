@@ -9,7 +9,7 @@ time: 19h30
 place: Maison du Peuple • Clermont-Ferrand
 description: Un tournoi d’impro 100 % local et 100 % folie ! Organisé par Le Poulailler de l'impro
 price: 8
-image: ../../assets/img/affiche-20251219-folle-melee-impro.jpeg
+image: ../../assets/img/affiche-20251219-folle-melee-impro.jpg
 buy_link: https://www.helloasso.com/associations/le-poulailler-de-l-impro/evenements/catch-d-improvisation-theatrale
 ---
 
