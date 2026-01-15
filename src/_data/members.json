@@ -30,11 +30,6 @@
         "image": "https://randomuser.me/api/portraits/lego/1.jpg"
     },
     {
-        "name": "Mathilde",
-        "description": "...",
-        "image": "https://randomuser.me/api/portraits/lego/5.jpg"
-    },
-    {
         "name": "Jérémie",
         "description": "...",
         "image": "https://randomuser.me/api/portraits/lego/1.jpg"
@@ -51,11 +46,6 @@
     },
     {
         "name": "Clément",
-        "description": "...",
-        "image": "https://randomuser.me/api/portraits/lego/5.jpg"
-    },
-    {
-        "name": "Raphaël",
         "description": "...",
         "image": "https://randomuser.me/api/portraits/lego/5.jpg"
     },
@@ -85,17 +75,22 @@
         "image": "https://randomuser.me/api/portraits/lego/5.jpg"
     },
     {
-        "name": "Axel",
-        "description": "...",
-        "image": "https://randomuser.me/api/portraits/lego/5.jpg"
-    },
-    {
         "name": "Elodie",
         "description": "...",
         "image": "https://randomuser.me/api/portraits/lego/9.jpg"
     },
     {
         "name": "Lucas",
+        "description": "...",
+        "image": "https://randomuser.me/api/portraits/lego/5.jpg"
+    },
+    {
+        "name": "Margaux",
+        "description": "...",
+        "image": "https://randomuser.me/api/portraits/lego/9.jpg"
+    },
+    {
+        "name": "Nino",
         "description": "...",
         "image": "https://randomuser.me/api/portraits/lego/5.jpg"
     }

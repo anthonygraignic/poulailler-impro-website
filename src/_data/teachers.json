@@ -2,47 +2,79 @@
     {
         "name": "La Fée Malou",
         "description": "Marie-Laure est comédienne, improvisatrice, marionnettiste, conteuse, maquilleuse et ballooneuse depuis 18 ans en Auvergne. Elle s'adresse aux enfants dès le plus jeune âge, mais aussi aux adultes. Elle improvise dans plusieurs troupes de Clermont-Ferrand.",
-        "image": "https://randomuser.me/api/portraits/lego/6.jpg",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
         "website": "https://lafeemalou.wixsite.com/lafeemalou",
         "instagram": "https://www.instagram.com/lafeemalou/"
     },
     {
         "name": "Vincent Chevarin",
         "description": "/",
-        "image": "https://randomuser.me/api/portraits/lego/0.jpg",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
         "instagram": "https://www.instagram.com/vincentchevarin/"
     },
     {
         "name": "Margaux Fonpult",
-        "description": "Comédienne-metteure en scène-formatrice",
-        "image": "https://randomuser.me/api/portraits/lego/4.jpg",
+        "description": "Comédienne-metteure en scène-formatrice, membre de la Cie Laskar Théâtre",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
         "instagram": "https://www.instagram.com/margaux.fonlupt/",
         "website": "https://margauxfonlupt.wixsite.com/profil"
     },
     {
         "name": "Vincent Tabary",
-        "description": "/",
-        "image": "https://randomuser.me/api/portraits/lego/8.jpg",
+        "description": "Comédien et improvisateur, co-créateur de la compagnie ES SPES, membre aussi de la Cie Arts Qi Med et de la Cie Entre Guillemets",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
         "instagram": "https://www.instagram.com/vincenttabary/",
         "website": "https://vincent.tabary.me/"
     },
     {
         "name": "Chrystelle - Impro MijoThé",
         "description": "🌺 Formatrice d'improvisation théâtrale pour enfants, ados, adultes et Team Building. Êtes-vous prêts à embarquer ? 5 4 3 2 1 Impro 🎭",
-        "image": "https://randomuser.me/api/portraits/lego/6.jpg",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
         "website": "https://impromijothe.wordpress.com",
         "instagram": "https://www.instagram.com/chrystelle_impro_mijothe/"
     },
     {
         "name": "Emilie",
         "description": "/",
-        "image": "https://randomuser.me/api/portraits/lego/7.jpg",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
         "website": "https://www.lenergiedemilie.com/"
     },
     {
-        "name": "Rémi",
-        "description": "/",
+        "name": "Laurent Cramesnil",
+        "description": "Musicien, comédien, Clown et metteur en scène. Co-créateur de la Cie (Laskar Théâtre)",
         "image": "https://randomuser.me/api/portraits/lego/3.jpg",
-        "instagram": "https://www.instagram.com/remi.couzon/"
+        "website": "https://www.laskartheatre.net/"
+    },
+    {
+        "name": "Marine Peinchaud",
+        "description": "Animatrice sociale et marionnettiste de formation",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
+        "website": "https://ciegeronimo.my.canva.site/les-ateliers-de-marine",
+        "instagram": "https://www.instagram.com/ma_pinch/"
+    },
+    {
+        "name": "Laure Philippe",
+        "description": "Médecin, Comédienne (improvisatrice) et Chroniqueuse Radio",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg"
+    },
+    {
+        "name": "Axel Prin",
+        "description": "Monteur vidéo et professeur de théâtre d'improvisation. Je fais aussi du stand-up quand je peux @axelprin_standup",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
+        "instagram": "https://www.instagram.com/axel.prin"
+    },
+    {
+        "name": "Guilain Bohineust",
+        "description": "Artiste Comédien Musicien de la Cie Improve Yourself",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
+        "facebook": "https://www.facebook.com/guilain.bohineust.artiste/",
+        "website": "http://www.improve-yourself.fr/qui-sommes-nous/"
+    },
+    {
+        "name": "Fabrice Coudret",
+        "description": "Cofondateur du Théâtre de la Petite Bulle / Théâtre du Motif ",
+        "image": "https://randomuser.me/api/portraits/lego/3.jpg",
+        "facebook": "https://www.facebook.com/fabrice.coudret/",
+        "website": "https://www.theatredumotif.fr/equipe-artistique/"
     }
 ]
