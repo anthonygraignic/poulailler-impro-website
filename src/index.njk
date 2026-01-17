@@ -1,6 +1,55 @@
 ---
 layout: base
+title: Accueil
+description: Le Poulailler de l'Impro - Troupe de théâtre d'improvisation à Clermont-Ferrand
 image: ./assets/img/accueil.jpeg
+
+eleventyImport:
+  collections: ["spectacle"]
 ---
 
-<img src="./assets/img/accueil.jpeg" alt="Logo bis du Poulailler de l'Impro"/>
+<section class="grid lg:grid-cols-2 gap-8 items-center py-4">
+    <div class="flex flex-col lg:space-y-4 space-y-2">
+        <h1>Troupe de théâtre d'improvisation à Clermont-Ferrand</h1>
+        <p class="text-lg">
+            Entourée par les volcans d'Auvergne, le Poulailler de l'Impro vous propose des spectacles uniques où rien n'est écrit à l'avance.
+            </p>
+        <p class="text-lg">
+            Cabarets, matchs, catchs ou concepts moyen/long format, nos improvisateurs passionnés vous embarquent dans des aventures théâtrales improvisées, pleines d'émotions.
+        </p>
+        <p class="text-lg">
+            Notre démarche artistique repose sur l’expérimentation, la qualité narrative et le respect de valeurs fortes : bienveillance, créativité et esprit collectif.
+        </p>
+    </div>
+    <img src="./assets/img/accueil.jpeg" alt="Logo du Poulailler de l'Impro" class="rounded-lg shadow-lg"/>
+</section>
+
+<section class="my-8">
+    <h2 class="text-3xl font-bold py-6">🎭 Prochains spectacles</h2>
+    {% set upcomingShows = collections.spectacle | upcoming | limit(3) %}
+    {% if upcomingShows.length > 0 %}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for spectacle in upcomingShows %}
+                {% include "components/show.njk" %}
+            {% endfor %}
+        </div>
+
+    {% else %}
+        <p class="text-gray-600">Aucun spectacle prévu pour le moment. Ils sont en cours d'organisation alors restez connectés !</p>
+    {% endif %}
+    <a href="/programmation/"
+        class="inline-block mt-6 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 focus:outline-none hover:text-white text-white  focus:ring-yellow-300 dark:focus:ring-yellow-900 font-medium rounded-lg transition">
+            Voir toute la programmation
+    </a>
+</section>
+
+{% if site.newsletterUrl %}
+    <section class="md:p-8 p-2 rounded-lg text-center">
+        <h2 class="text-3xl font-bold mb-4">📧 Restez informés</h2>
+        <p class="mb-6">Inscrivez-vous à notre newsletter pour ne manquer aucun spectacle et recevoir nos actualités en avant-première.<br/>Ou suivez nous sur les réseaux</p>
+        <a href={{site.newsletterUrl}} target="_blank" rel="noopener noreferrer" 
+        class="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 focus:outline-none hover:text-white text-white  focus:ring-yellow-300 dark:focus:ring-yellow-900 font-medium rounded-lg transition">
+            S'inscrire à la newsletter
+        </a>
+    </section>
+{% endif %}

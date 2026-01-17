@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Spectacles
-description: Programmation et prochains spectacles de la troupe de théatre d'improvisation le Poulailler de l'Impro
+description: Prochains spectacles de la troupe de théatre d'improvisation le Poulailler de l'Impro
 eleventyNavigation:
   key: Programmation
   order: 1
@@ -12,11 +12,16 @@ eleventyImport:
 
 <h1>{{ title }}</h1>
 
+{% set prochainSpectacle = collections.spectacle | nextShow %}
+{% include "components/next-show-hero.njk" %}
+
 <section>
     <h2>À venir</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         {% for spectacle in collections.spectacle | upcoming(collections.spectacle) %}
-            {% include "components/show.njk" %}
+            {% if prochainSpectacle and spectacle.url != prochainSpectacle.url %}
+                {% include "components/show.njk" %}
+            {% endif %}
         {% endfor %}
     </div>
 </section>
