@@ -4,7 +4,7 @@ layout: show
 tags:
   - spectacle
   - cabaret
-date: 2026-03-10
+date: 2026-03-03
 time: 20h
 place: Le PIC, 34 rue du Clos Four 63100 CLERMONT-FERRAND
 description: Soirée théâtre d’improvisation au PIC
