@@ -1,7 +1,6 @@
-const { DateTime } = require("luxon");
-const { execSync } = require("child_process");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const calendarPlugin = require("@codegouvfr/eleventy-plugin-calendar");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/img");
@@ -15,11 +14,25 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(calendarPlugin, {
+    defaultLocation: "France",
+  });
+
+  // Custom filter to add prefix to calendar events only
+  eleventyConfig.addFilter("addCalendarPrefix", (events) => {
+    return events.map((event) => ({
+      ...event,
+      data: {
+        ...event.data,
+        title: `Poulailler de l'impro - ${event.data.title}`,
+      },
+    }));
+  });
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addNunjucksGlobal(
     "upcomingEvent",
-    (eventDate) => Date.parse(eventDate) > new Date().getTime()
+    (eventDate) => Date.parse(eventDate) > new Date().getTime(),
   );
   eleventyConfig.addFilter("past", function (collection) {
     return collection
@@ -54,7 +67,7 @@ module.exports = function (eleventyConfig) {
         .sort(function (a, b) {
           return a.date - b.date; // sort by date - ascending
         });
-    }
+    },
   );
   eleventyConfig.addFilter("nextShow", (collection) => {
     const now = new Date();

@@ -25,3 +25,4 @@ npm run build
 - Sitemap
 - Page 404 personnalisée
 - Prévue sociale des pages et spectacles (meta `og:` et `twitter:`)
+- Calendrier iCal des spectacles à venir (via [@codegouvfr/eleventy-plugin-calendar](https://www.npmjs.com/package/@codegouvfr/eleventy-plugin-calendar))
