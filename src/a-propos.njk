@@ -61,26 +61,25 @@ eleventyNavigation:
 			<span class="sr-only">Page Instagram</span>
 		</a>
 	</div>
-	<p>Pour les plus communicants, notre logo et charte graphique sont disponibles
-		<a href="/poulailler-graphisme.zip" class="underline">ici</a>.
-	</p>
-	<br/>
-	<p>
+	<p>Pour les plus communicants, notre logo et charte graphique sont disponibles dans une page dédiée, à retrouver <a href="/charte-graphique" class="underline">ici</a>.</p>
+</p>
+<br/>
+<p>
 		Et évidemment, si vous souhaitez nous voir en spectacle, c’est par ici :
 		<a href="/spectacles" class="underline">Programmation des spectacles</a>
-	</p>
-	<p class="mt-2">
+</p>
+<p class="mt-2">
 		On lance le décompte et on vous dit « À bientôt » ?
 		<span class="inline-flex flex-col font-bold">
       5, 4, 3, 2, 1 ... IMPRO !
     </span>
-	</p>
+</p>
 </section>
 
 <section class="mt-8">
-	<h1>ATELIERS</h1>
+<h1>ATELIERS</h1>
 
-	<p>
+<p>
 		Nos ateliers ont lieu tous les mercredi soirs. Ils sont animés par des intervenants extérieurs.
 		Nous animons également des cours en auto-gestion. Ils ont pour objectif de nous faire travailler
 		différentes techniques (travail sur les émotions, les personnages, l’expression corporelle, et
@@ -88,44 +87,44 @@ eleventyNavigation:
 		sont au programme.
 	</p>
 
-	<h1>STAGES</h1>
-	<p>
+<h1>STAGES</h1>
+<p>
 		Une à deux fois par an, « le Poulailler de l’Impro » organise des stages animés par un
 		intervenant professionnel.<br/>
 		L’objectif ? Approfondir une thématique particulière d’improvisation théâtrale sur deux journées.
 		<br/>
 		Parmi les stages organisés par le Poulailler, deux thèmes ont déjà été réalisés :
 	</p>
-	<ul class="list-disc list-inside ml-2 my-2">
-		<li>le conte et l’imaginaire avec la Fée Malou</li>
-		<li>
+<ul class="list-disc list-inside ml-2 my-2">
+	<li>le conte et l’imaginaire avec la Fée Malou</li>
+	<li>
 			une formation aux rôles de DJs, MC (maître de cérémonie) et MJ (maître de jeux) avec
 			ImpromijoThé
 		</li>
-		<li>l'enthousiasme avec Johanna</li>
-	</ul>
-	<p>
+	<li>l'enthousiasme avec Johanna</li>
+</ul>
+<p>
 		L’inscription à ces stages est prioritaire pour les membres du Poulailler mais en fonction du
 		nombre d’inscrits, le Poulailler se réserve le droit d’inscrire d’autres personnes venues
 		d’autres troupes d’improvisation, voire des personnes n’ayant jamais pratiqué le théâtre et
 		l’improvisation !
 	</p>
-	<p>
-		<a href="/stages" class="underline">Voir les prochains stages</a>
-	</p>
+<p>
+	<a href="/stages" class="underline">Voir les prochains stages</a>
+</p>
 </section>
 <section class="mt-8">
-	<h1>LA BASSE COUR</h1>
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2 md:mt-8">
-		{% for member in members %}
-			{% include "components/member.njk" %}
-		{% endfor %}
-	</div>
+<h1>LA BASSE COUR</h1>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2 md:mt-8">
+	{% for member in members %}
+		{% include "components/member.njk" %}
+	{% endfor %}
+</div>
 
-	<h1>INTERVENANTS</h1>
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2 md:mt-8">
-		{% for teacher in teachers %}
-			{% include "components/teacher.njk" %}
-		{% endfor %}
-	</div>
+<h1>INTERVENANTS</h1>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2 md:mt-8">
+	{% for teacher in teachers %}
+		{% include "components/teacher.njk" %}
+	{% endfor %}
+</div>
 </section>
