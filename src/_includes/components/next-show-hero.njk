@@ -1,10 +1,10 @@
 {% if prochainSpectacle %}
-    <section class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-xl p-8 mb-12">
+    <section class="bg-pyellow rounded-lg shadow-xl p-8 mb-12">
         <div class="grid lg:grid-cols-2 gap-8 items-center">
-            <div class="text-white">
+            <div >
                 <p class="text-sm font-semibold uppercase tracking-wide mb-2">Prochain spectacle</p>
-                <h2 class="text-4xl font-bold mb-4">{{ prochainSpectacle.data.title }}</h2>
-                <div class="space-y-2 text-lg">
+                <p class="text-4xl font-bold mb-4">{{ prochainSpectacle.data.title }}</p>
+                <div class="space-y text-lg">
                     <p class="flex items-center">
                         <span class="mr-2">📅</span>
                         {{ prochainSpectacle.data.date.toLocaleDateString("fr") }} à {{prochainSpectacle.data.time}}
@@ -14,7 +14,8 @@
                         {{ prochainSpectacle.data.place }}
                     </p>
                     {% if prochainSpectacle.data.price %}
-                        <p class="font-sm text-gray-700 dark:text-gray-400">
+                        <p class="font-sm">
+                            <span class="mr-2">💶</span>
                             {% if prochainSpectacle.data.price > 0 %}
                                 {{prochainSpectacle.data.price}}€
                             {% else %}
@@ -24,7 +25,7 @@
                     {% endif %}
                 </div>
                 <a href="{{ prochainSpectacle.url }}" 
-               class="inline-block mt-6 px-6 py-3 bg-white text-yellow-600 hover:bg-gray-100 font-bold rounded-lg transition shadow-md">
+               class="inline-block mt-6 px-6 py-3 bg-white text-pyellow hover:bg-pyellow hover:text-white hover:border border font-bold rounded-lg transition shadow-md">
                 En savoir plus →
             </a>
             </div>
