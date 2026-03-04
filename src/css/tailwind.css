@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  @apply text-3xl font-bold tracking-tighter mt-2 mb-2 text-center lg:text-4xl text-yellow-500 uppercase;
+  @apply text-3xl font-bold tracking-tighter mt-2 mb-2 text-center lg:text-4xl text-pyellow uppercase;
 }
 
 h2 {
@@ -41,7 +41,7 @@ h3 {
 }
 
 a {
-  @apply hover:text-ppink md:dark:hover:text-white md:dark:hover:bg-transparent;
+  @apply hover:text-ppink md:dark:hover:text-white;
 }
 
 p {
