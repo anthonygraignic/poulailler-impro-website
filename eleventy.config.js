@@ -1,24 +1,46 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const calendarPlugin = require("@codegouvfr/eleventy-plugin-calendar");
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import calendarPlugin from "@codegouvfr/eleventy-plugin-calendar";
+import fs from "fs";
+import path from "path";
+import postcss from "postcss";
+import tailwindcss from "@tailwindcss/postcss";
+import cssnano from "cssnano";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
+  // Compile Tailwind CSS before Eleventy processes files
+  eleventyConfig.on("eleventy.before", async () => {
+    const tailwindInputPath = path.resolve("./src/css/tailwind.css");
+    const tailwindOutputPath = "./public/css/styles.css";
+
+    const cssContent = fs.readFileSync(tailwindInputPath, "utf8");
+
+    const outputDir = path.dirname(tailwindOutputPath);
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    const result = await processor.process(cssContent, {
+      from: tailwindInputPath,
+      to: tailwindOutputPath,
+    });
+
+    fs.writeFileSync(tailwindOutputPath, result.css);
+  });
+
+  const processor = postcss([
+    tailwindcss(),
+    cssnano({
+      preset: "default",
+    }),
+  ]);
+
   eleventyConfig.addPassthroughCopy("src/assets/img");
-  //   eleventyConfig.addPassthroughCopy("src/css/tailwind.css");
-
-  //   eleventyConfig.setServerOptions({
-  //     watch: ["public/assets/css/tailwind.css"],
-  //   });
-
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(calendarPlugin, {
-    defaultLocation: "France",
-  });
 
-  // Custom filter to add prefix to calendar events only
   eleventyConfig.addFilter("addCalendarPrefix", (events) => {
     return events.map((event) => ({
       ...event,
@@ -27,6 +49,10 @@ module.exports = function (eleventyConfig) {
         title: `Poulailler de l'impro - ${event.data.title}`,
       },
     }));
+  });
+
+  eleventyConfig.addPlugin(calendarPlugin, {
+    defaultLocation: "France",
   });
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
@@ -38,14 +64,14 @@ module.exports = function (eleventyConfig) {
     return collection
       .filter((item) => Date.parse(item.data.date) < new Date())
       .sort(function (a, b) {
-        return b.date - a.date; // sort by date - descending
+        return b.date - a.date;
       });
   });
   eleventyConfig.addFilter("upcoming", function (collection) {
     return collection
       .filter((item) => Date.parse(item.data.date) >= new Date())
       .sort(function (a, b) {
-        return a.date - b.date; // sort by date - ascending
+        return a.date - b.date;
       });
   });
   eleventyConfig.addFilter("limit", function (array, limit) {
@@ -65,7 +91,7 @@ module.exports = function (eleventyConfig) {
           return itemDate >= start && itemDate <= end;
         })
         .sort(function (a, b) {
-          return a.date - b.date; // sort by date - ascending
+          return a.date - b.date;
         });
     },
   );
@@ -88,4 +114,4 @@ module.exports = function (eleventyConfig) {
       output: "public",
     },
   };
-};
+}

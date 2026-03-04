@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>
-      {% if title %}
-        {{title}} | 
+        <title>
+            {% if title %}
+                {{title}} | 
       {% endif %}
-      {{site.title}}
-    </title>
-    <meta name="description" content="
+            {{site.title}}
+        </title>
+        <meta name="description" content="
       {% if description %}
         {{description}}
       {% else %}
@@ -19,26 +19,26 @@
       {% endif %}
     "/>
 
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:title" content="{{ title or site.title }}">
-    <meta property="og:description" content="{{ description or site.description }}">
-    <meta property="og:url" content="{{ absolutePageUrl }}">
-    <meta name="twitter:card" content="{% if image -%}summary_large_image{% else %}summary{% endif %}">
-    {%- if image -%}
-      <meta property="og:image" content="{{ image | url | absoluteUrl(site.url) }}">
-    {%- endif -%}
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:site_name" content="{{ site.title }}">
+        <meta property="og:title" content="{{ title or site.title }}">
+        <meta property="og:description" content="{{ description or site.description }}">
+        <meta property="og:url" content="{{ absolutePageUrl }}">
+        <meta name="twitter:card" content="{% if image -%}summary_large_image{% else %}summary{% endif %}">
+        {%- if image -%}
+            <meta property="og:image" content="{{ image | url | absoluteUrl(site.url) }}">
+        {%- endif -%}
 
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
-  </head>
-  <body>
-    {% include "partials/_header.njk" %}
-    <main class="flex flex-col px-4 py-2 max-w-5xl w-full mx-auto my-0">
-      {% block main %}
-        {{content | safe}}
-      {% endblock %}
-    </main>
-    {% include "partials/_footer.njk" %}
-    {% include "js.njk" %}
-  </body>
+        <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+    </head>
+    <body>
+        {% include "partials/_header.njk" %}
+        <main class="flex flex-col px-4 py-2 max-w-5xl w-full mx-auto my-0">
+            {% block main %}
+                {{content | safe}}
+            {% endblock %}
+        </main>
+        {% include "partials/_footer.njk" %}
+        {% include "js.njk" %}
+    </body>
 </html>

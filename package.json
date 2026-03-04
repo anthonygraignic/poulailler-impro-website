@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "Static site for Poulailler de l'impro french improv troupe",
   "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "npm-run-all -p dev:*",
-    "build": "run-s build:*",
-    "dev:11ty": "eleventy --serve",
-    "dev:css": "tailwindcss -i src/css/tailwind.css -o public/css/styles.css --watch --postcss",
-    "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/css/tailwind.css -o public/css/styles.css --postcss"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -23,12 +21,17 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-vite": "^7.0.0",
     "@codegouvfr/eleventy-plugin-calendar": "^3.0.6",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.2.1",
     "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^4.0.0",
+    "vite": "^7.3.1"
   }
 }

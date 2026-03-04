@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
     {% set absoluteUrl %}{{ '/feed/' | url | absoluteUrl(site.url) }}{% endset %}
     <link href="{{ absoluteUrl }}" rel="self"/>
     <link href="{{ site.url }}"/>
-    <updated>{{ collections.spectacle | rssLastUpdatedDate }}</updated>
+    <updated>{{ collections.spectacle | getNewestCollectionItemDate | dateToRfc822 }}</updated>
     <id>{{ site.url }}</id>
     <author>
         <name>{{ site.author }}</name>
@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: true
         <entry>
             <title>{{ page.data.title  }}</title>
             <link href="{{ absolutePostUrl }}"/>
-            <updated>{{ page.date | rssDate }}</updated>
+            <updated>{{ page.date | dateToRfc822 }}</updated>
             <id>{{ absolutePostUrl }}</id>
             <content type="html">{{ page.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
         </entry>
