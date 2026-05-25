@@ -9,7 +9,7 @@ time: 20h30
 place: Jardins Partagés • Beaumont
 description:
 price: 5
-image:
+image: ../../assets/img/affiche-20260612-cabaret.jpeg
 buy_link: https://www.helloasso.com/associations/le-poulailler-de-l-impro/evenements/cabaret-d-improvisation-theatrale-aux-jardin-de-beaumont
 ---
 
