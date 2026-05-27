@@ -1,0 +1,34 @@
+# Le Poulailler de l'Impro
+
+> Troupe de théâtre d'improvisation basée à Clermont-Ferrand, en Auvergne (France). Le Poulailler de l'Impro propose des spectacles uniques où rien n'est écrit à l'avance : cabarets, matchs, catchs et concepts moyen/long format.
+
+Notre démarche artistique repose sur l'expérimentation, la qualité narrative et le respect de valeurs fortes : bienveillance, créativité et esprit collectif. Nos improvisateurs passionnés embarquent le public dans des aventures théâtrales improvisées, pleines d'émotions.
+
+Le site est en français. La majorité des spectacles ont lieu à Clermont-Ferrand et dans son agglomération (Beaumont, Cébazat, etc.).
+
+## Pages principales
+
+- [Accueil](https://www.poulailler-impro.fr/) : Présentation de la troupe et aperçu des prochains spectacles.
+- [Spectacles](https://www.poulailler-impro.fr/spectacles/) : Programmation complète — prochains spectacles à venir et archives des spectacles passés.
+- [Contact](https://www.poulailler-impro.fr/contact) : Formulaire pour toute question, demande de collaboration ou candidature pour rejoindre la troupe.
+- [Mentions légales](https://www.poulailler-impro.fr/mentions-legales) : Mentions légales et politique de confidentialité.
+- [Charte graphique](https://www.poulailler-impro.fr/charte-graphique) : Identité visuelle de la troupe.
+
+## Formats de spectacles
+
+- **Cabarets** : Format court multi-saynètes basé sur des propositions du public (tarif habituel : 5 €).
+- **Matchs d'improvisation** : Affrontement amical entre deux équipes d'improvisateurs, souvent contre une troupe invitée.
+- **Catchs d'impro** : Format spectaculaire et énergique inspiré du catch.
+- **Concepts moyen / long format** : Spectacles thématiques uniques (par ex. *Indiscrétions*, *Souvenirs d'enfance*, *La Marelle*, *Histoires à la carte*, *Umami*).
+
+## Suivre la troupe
+
+- [Flux RSS](https://www.poulailler-impro.fr/feed/feed.xml) : Actualités et annonces de spectacles.
+- [Calendrier iCal](https://www.poulailler-impro.fr/calendar.ics) : Calendrier des spectacles à ajouter à son agenda.
+- [Newsletter](https://8dd70ce0.sibforms.com/serve/MUIFANph_8zY60ir8FpojMmxW_9ufsaLaRYa_1JTISxJdQihF3NK1xn5ZNDTClA2R8XSi_NpNyDo59la6sVkPX_nd-J7X3K9NiRbyAunTN9PjtZ_sQjK9DxqKwlQHbkmRuLT-p-tB5u8FO4ruHR19eHdl9jXdlgNO39_bE_rsZmjjMQuzFL9QrlnMYL6YlAyAKYx2wHJAzZOPiYa) : Inscription pour recevoir les actualités en avant-première.
+- [Facebook](https://www.facebook.com/poulaillerimpro/)
+- [Instagram](https://www.instagram.com/poulailler_impro/)
+
+## Soutien
+
+- [Faire un don](https://www.helloasso.com/associations/le-poulailler-de-l-impro/formulaires/1) : Soutenir l'association via HelloAsso.
