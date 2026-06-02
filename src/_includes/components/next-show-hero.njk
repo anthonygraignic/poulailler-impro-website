@@ -14,9 +14,9 @@
                         {{ prochainSpectacle.data.place }}
                     </p>
                     {% if prochainSpectacle.data.price %}
-                        <p class="font-sm">
+                        <p class="flex items-center">
                             <span class="mr-2">💶</span>
-                            {% if prochainSpectacle.data.price > 0 %}
+                            {% if prochainSpectacle.data.price is number %}
                                 {{prochainSpectacle.data.price}}€
                             {% else %}
                                 Gratuit

@@ -14,11 +14,11 @@
 
         {% if spectacle.data.price %}
             <p class="font-sm text-gray-700 dark:text-gray-400">
-                {% if spectacle.data.price > 0 %}
+                {% if spectacle.data.price is number %}
                     {{spectacle.data.price}}€
-            {% else %}
-                Gratuit
-            {% endif %}
+                {% else %}
+                    Gratuit
+                {% endif %}
             </p>
         {% endif %}
 

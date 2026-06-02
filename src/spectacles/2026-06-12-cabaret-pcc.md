@@ -8,7 +8,7 @@ date: 2026-06-12
 time: 20h30
 place: Jardins Partagés • Beaumont
 description:
-price:
+price: au chapeau
 image: ../../assets/img/affiche-20260612-cabaret.jpeg
 buy_link: https://www.helloasso.com/associations/le-poulailler-de-l-impro/evenements/cabaret-d-improvisation-theatrale-aux-jardin-de-beaumont
 ---
