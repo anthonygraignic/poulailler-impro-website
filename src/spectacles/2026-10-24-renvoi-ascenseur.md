@@ -1,5 +1,5 @@
 ---
-title: Renvoi d'ascenseur
+title: Renvoi d'ascenseur (reporté)
 layout: show
 tags:
   - spectacle
@@ -9,11 +9,14 @@ time: 20h30
 place: La Petite Gaillarde • Clermont-Ferrand
 description:
 price: 9
-image: ../../assets/img/affiche-20261024-renvoi-d-ascenseur-2.png
-buy_link: https://www.helloasso.com/associations/le-poulailler-de-l-impro/evenements/renvoi-d-ascenseur-format-long
+image: ../../assets/img/affiche-20261024-renvoi-d-ascenseur-2-reporte.png
 ---
 
-# Renvoi d'ascenseur
+# Renvoi d'ascenseur (REPORTÉ)
+
+⚠️ ATTENTION ! En raison des manifestations prévues le samedi 24 octobre et au vu de la localisation de La Petite Gaillarde, nous avons décidé d'**annuler le spectacle**, pour la sécurité de tous. ⚠️
+
+--
 
 Venez retrouver le Poulailler de l'Impro pour son premier format long (long form) de la saison.
 
